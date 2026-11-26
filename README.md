@@ -41,7 +41,7 @@ The native compatibility companion contains the existing scoped keyboard and tab
 
 ## Screenshots
 
-The icon above is the shipped app artwork, not a screenshot. Genuine screenshots of this release will be added after capture on the device; no simulated interface is represented as real.
+The icon above is the shipped app artwork, not a screenshot. No validated device screenshot of this release is currently available. Public captures must show a neutral demonstration page, not private browsing history or accounts; no simulated interface is represented as real.
 
 ## Build and verify
 
