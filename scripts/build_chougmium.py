@@ -24,7 +24,7 @@ UPSTREAM_SHA256 = "7b7881b5b7f1ad1c8cab77af27fe90e79a7f764b260a1848fa45f89dadc7b
 UPSTREAM_EXE_SHA256 = "2dacf0c78e0313a098b9f5c8f6a85a9a19f92df23530543599a3d0dc2ff7bca2"
 SHIM = ROOT / "releases/com.local.venetium-uikit-compat_0.1.1_iphoneos-arm.deb"
 ICON = ROOT / "assets/chougmium-icon.png"
-NEW_VERSION = "150.7871.222.1+chougmium4"
+NEW_VERSION = "150.7871.222.1+chougmium5"
 RELEASE = ROOT / "docs/debs" / f"ru.computershik.venetium_{NEW_VERSION}_iphoneos-arm.deb"
 
 
@@ -117,6 +117,7 @@ def update_icons(app: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--upstream-deb", type=Path, help="Verified upstream download cached locally")
+    parser.add_argument("--rootful-only", action="store_true", help="Build only the traditional Cydia package; default also builds native IPA")
     args = parser.parse_args()
     with tempfile.TemporaryDirectory(prefix="chougmium-build-") as tmp:
         t = Path(tmp)
@@ -175,6 +176,9 @@ def main() -> None:
                        cwd=parts, check=True)
         shutil.copyfile(temp_release, RELEASE)
     print("BUILT", RELEASE, RELEASE.stat().st_size, "SHA256", sha256(RELEASE))
+    if not args.rootful_only:
+        from build_chougmium_native import build as build_native
+        build_native(RELEASE, sha256(RELEASE), ROOT / ".cache/ios9-return")
 
 
 if __name__ == "__main__":

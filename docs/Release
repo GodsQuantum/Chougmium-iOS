@@ -5,12 +5,12 @@ Codename: stable
 Architectures: iphoneos-arm
 Components: main
 Description: Local Chromium for jailbroken iOS 9
-Date: Thu, 26 Nov 2026 11:09:48 GMT
+Date: Thu, 26 Nov 2026 12:20:27 GMT
 MD5Sum:
- 0789fb3a68cf628f2853f5b3cddfad34 1555 Packages
- 5f7705f13a26b6673ee0bfc11b53706b 807 Packages.gz
- 214c6173246062d310ebd62c84f497b2 909 Packages.bz2
+ 8116c3f838de4bff0a36d35ebc336cac 1555 Packages
+ 5b79883c4362fdfb5bf9c5764cc8dd57 809 Packages.gz
+ cf9f0fcd2a05eff5e4eaaae92c5ed37d 908 Packages.bz2
 SHA256:
- 903f7af50377bc0e43123d6d3de716e33adf6b773a92a91b28c38c0f2da71fd2 1555 Packages
- c5b0e5bf473e0022b2516bc9e89f6e2d913abd666545af6ef2cb8fc84712963b 807 Packages.gz
- 52d97f1dc8784b37a7993091ad505427560ebf04ed04c824579cc3ba0490f190 909 Packages.bz2
+ f22e43d5cba9e4db9f3a2c41f29cf01db3aaac9df650b9996926792e5abdf75d 1555 Packages
+ 8337602968ba2d38ccc0fbd6af3fa280055ff71c36e020446e243d01dc310b46 809 Packages.gz
+ 9b0aee5a52cd2d30ce4bb963fe7526e25bd39892c8f89d3cf83d7404acb2da97 908 Packages.bz2

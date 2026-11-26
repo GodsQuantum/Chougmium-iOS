@@ -9,7 +9,7 @@ An independent packaging and compatibility edition of [Venetium for iOS](https:/
 
 ## Current release
 
-Version 150.7871.222.1+chougmium4 refreshes the app and repository artwork with a 1024 px RGB master and Lanczos-scaled native icons. The original Chromium binary and existing profile are preserved.
+Version 150.7871.222.1+chougmium5 restores the original globe artwork exactly. The recommended native IPA installs in the iOS user-app container on the data partition, with the original Chromium executable and all 17 icons verified on iPad 2.
 
 ## Features
 
@@ -22,29 +22,22 @@ Version 150.7871.222.1+chougmium4 refreshes the app and repository artwork with 
 
 ## Install on the iPad
 
-Requires a jailbroken iOS 9 device with Cydia and MobileSubstrate. Tested installation target: iPad 2, iOS 9.3.5, ARMv7.
+**Recommended: native IPA (data partition).** Requires jailbroken iOS 9, AppSync Unified and a trusted IPA installer. On an existing native installation, upgrade with the same bundle identifier; do not uninstall or clear its profile.
 
-1. In Safari, open **[the installation page](https://godsquantum.github.io/Chougmium-iOS/)**.
-2. Add the Cydia source `https://godsquantum.github.io/Chougmium-iOS/`.
-3. Install **Chougmium**. Optionally install **Chougmium Tab Controls Repair** from the same source.
-4. Open Chougmium from the Home screen.
+- [Native Chougmium IPA](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium5/Chougmium_150.7871.222.1%2Bchougmium5_iphoneos-arm.ipa)
+- [Native compatibility package (.deb)](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium5/com.local.chougmium-native-compat_0.1.0_iphoneos-arm.deb): scoped keyboard and tab repairs, requires MobileSubstrate; contains no browser bundle.
 
-If a package-manager link does not work, use Cydia's Sources > Edit > Add, then search for Chougmium. No remote browser service is required. Direct Cydia installation also needs a compatible HTTPS trust store.
+Do not combine the native IPA with the rootful browser DEB or the old separate tab repair. If migrating from that edition, preserve the existing profile, remove both rootful packages, install the IPA using appinst, install its compatibility package, then restore the profile to the appropriate native data container. The sandbox may limit hardware video decoding.
 
-**iOS 9 HTTPS caveat:** a native HTTPS request on iPad 2 returned NSURLErrorDomain -1202 against GitHub Pages. iOS 9 predates built-in ISRG Root X1 trust. See [official certificate compatibility](https://letsencrypt.org/docs/certificate-compatibility/) and [official CA certificates](https://letsencrypt.org/certificates/). If the device lacks compatible trusted roots, use the release downloads on a modern computer and transfer the packages via your existing trusted installer. Native Cydia installation from the public URL is not yet verified. Do not ignore certificate errors.
+**Alternative: legacy rootful Cydia installation.** This uses the system partition and is not recommended on storage-constrained devices. Add the [Cydia source](https://godsquantum.github.io/Chougmium-iOS/) only if you deliberately choose this mode. [Rootful browser DEB](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium5/ru.computershik.venetium_150.7871.222.1%2Bchougmium5_iphoneos-arm.deb) · [Rootful tab repair](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium5/com.local.chougmium-tabsfix_0.1.0_iphoneos-arm.deb).
 
-### Direct downloads
-
-- [Chougmium 150.7871.222.1+chougmium4 (.deb)](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium4/ru.computershik.venetium_150.7871.222.1%2Bchougmium4_iphoneos-arm.deb)
-- [Optional tab-controls repair (.deb)](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium4/com.local.chougmium-tabsfix_0.1.0_iphoneos-arm.deb)
-
-A downloaded .deb requires a compatible package installer; stock iOS cannot install it directly. Do not install over an unrelated browser or force package dependencies. This package intentionally shares Venetium's bundle/package identity and replaces that edition, rather than creating a second profile.
+**iOS 9 HTTPS caveat:** a real native HTTPS request on iPad 2 returned NSURLErrorDomain -1202 against GitHub Pages. iOS 9 predates built-in ISRG Root X1 trust. See [official certificate compatibility](https://letsencrypt.org/docs/certificate-compatibility/). If needed, obtain verified release packages on a modern computer and transfer them to the iPad with your usual trusted installer. Direct Cydia installation from the public URL is not certified. Do not disable certificate validation.
 
 ## Compatibility and known limitations
 
-iOS 9.x, ARMv7, rootful jailbreak. A package installed successfully and the browser has been observed running on iPad 2 / iOS 9.3.5. The original Chromium executable is unchanged. The keyboard repair is narrowly scoped; not every modern site or media format is supported. With the iPad 2's 512 MB RAM, complex web apps and many tabs can be slow or terminate under memory pressure. Do not use an old jailbroken device as a security-sensitive daily browser. No promise of current Chrome security updates, extensions or Google account sync.
+iOS 9.x, ARMv7, jailbreak. Native IPA installation, original engine hash, 17 icon resources and launch verified on iPad 2 / iOS 9.3.5. The original Chromium executable is unchanged. The keyboard repair is narrowly scoped; not every modern site or media format is supported. With the iPad 2's 512 MB RAM, complex web apps and many tabs can be slow or terminate under memory pressure. Do not use an old jailbroken device as a security-sensitive daily browser. No promise of current Chrome security updates, extensions or Google account sync.
 
-The native tab repair is optional and can be removed independently; restart the browser after installing/removing it. Do not modify the system partition or globally weaken TLS.
+The native compatibility companion contains the existing scoped keyboard and tab repairs. The rootful alternative uses its own separate tab-repair package. Do not modify the system partition or globally weaken TLS.
 
 ## Screenshots
 

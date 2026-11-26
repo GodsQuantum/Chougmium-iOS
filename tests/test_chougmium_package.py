@@ -7,7 +7,7 @@ import plistlib
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-PKG = ROOT / "docs/debs/ru.computershik.venetium_150.7871.222.1+chougmium4_iphoneos-arm.deb"
+PKG = ROOT / "docs/debs/ru.computershik.venetium_150.7871.222.1+chougmium5_iphoneos-arm.deb"
 UPSTREAM_EXE_SHA = "2dacf0c78e0313a098b9f5c8f6a85a9a19f92df23530543599a3d0dc2ff7bca2"
 
 def dpkg_field(name):
@@ -17,7 +17,7 @@ def check():
     assert PKG.is_file(), "Chougmium package does not exist yet"
     assert dpkg_field("Package") == "ru.computershik.venetium", "preserve app identity"
     assert dpkg_field("Name") == "Chougmium"
-    assert dpkg_field("Version") == "150.7871.222.1+chougmium4"
+    assert dpkg_field("Version") == "150.7871.222.1+chougmium5"
     assert dpkg_field("Architecture") == "iphoneos-arm"
     assert "data.tar.lzma" in subprocess.check_output(["ar", "t", str(PKG)], text=True).splitlines(), "Use proven upstream Cydia compression"
     depends = dpkg_field("Depends")

@@ -6,14 +6,16 @@ body{margin:0;background:#101c2c;color:#eaf2f7;font:17px -apple-system,Helvetica
 <img src="icons/Chougmium.png" width="96" height="96" alt="App icon">
 <h1>Chougmium</h1>
 <p>Chromium 150, running locally on jailbroken iPad 2 / iOS 9.</p>
-<p class="muted">ARMv7 · MobileSubstrate required · Rootful .deb</p>
-<a class="install" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://godsquantum.github.io/Chougmium-iOS/">Add source in Cydia</a>
-<p>If the button does not work, add this URL in Cydia &gt; Sources &gt; Edit &gt; Add:</p>
+<p class="muted">ARMv7 · iOS 9 · Native IPA recommended</p>
+<a class="install" href="https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium5/Chougmium_150.7871.222.1%2Bchougmium5_iphoneos-arm.ipa">Download native IPA (data partition)</a>
+<p>Requires AppSync and a trusted IPA installer. Install the <a href="https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium5/com.local.chougmium-native-compat_0.1.0_iphoneos-arm.deb">native compatibility package</a> for keyboard/tab repairs. Do not combine it with the rootful browser or old separate tab repair.</p>
+<h2>Alternative: rootful Cydia edition</h2>
+<p>This older mode uses the system partition. Use only if you deliberately need it.</p>
+<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://godsquantum.github.io/Chougmium-iOS/">Add rootful source in Cydia</a>
 <code>https://godsquantum.github.io/Chougmium-iOS/</code>
-<p>Then <a href="cydia://package/ru.computershik.venetium">install Chougmium</a> and optionally <a href="cydia://package/com.local.chougmium-tabsfix">Tab Controls Repair</a>.</p>
 <p class="muted"><strong>iOS 9 HTTPS:</strong> the original trust store may reject GitHub Pages certificates. See <a href="https://letsencrypt.org/docs/certificate-compatibility/">official CA compatibility</a>. If needed, download the packages from a modern computer and transfer them using your usual installer. Native Cydia installation from this URL is not yet verified.</p><h2>Direct downloads</h2>
-<p><a href="debs/ru.computershik.venetium_150.7871.222.1%2Bchougmium4_iphoneos-arm.deb">Browser package (.deb, 51.3 MiB)</a></p>
-<p><a href="debs/com.local.chougmium-tabsfix_0.1.0_iphoneos-arm.deb">Optional tab-controls repair (.deb)</a></p>
+<p><a href="debs/ru.computershik.venetium_150.7871.222.1%2Bchougmium5_iphoneos-arm.deb">Rootful browser package (.deb, 51.4 MiB)</a></p>
+<p><a href="debs/com.local.chougmium-tabsfix_0.1.0_iphoneos-arm.deb">Rootful-only tab-controls repair (.deb)</a></p>
 <p class="muted">Install downloaded packages with a compatible installer. Stock iOS cannot install these packages.</p>
 <h2>About this edition</h2>
 <p>Original Venetium Chromium engine, local rendering, high-resolution artwork, scoped keyboard compatibility fix and optional close-tab controls repair.</p>

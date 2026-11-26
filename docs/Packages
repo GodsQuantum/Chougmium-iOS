@@ -23,14 +23,14 @@ Homepage: https://github.com/Computershik73/Venetium-iOS
 Section: Networking
 Depends: firmware (>= 9.0), firmware (<< 10.0), mobilesubstrate
 Architecture: iphoneos-arm
-Version: 150.7871.222.1+chougmium4
+Version: 150.7871.222.1+chougmium5
 Installed-Size: 144080
 Conflicts: com.local.venetium-uikit-compat
 Replaces: com.local.venetium-uikit-compat
-Filename: debs/ru.computershik.venetium_150.7871.222.1+chougmium4_iphoneos-arm.deb
-Size: 53764150
-MD5sum: df2bf24641cc05305fbdbd048f6e7457
-SHA1: e7bc60d3fc61c24f361b9c1673f4f0e7b1f37409
-SHA256: 429c5a6db87f533b767cd896cab8d01f19b6114e889f4eb83844d01cdc30f0ac
+Filename: debs/ru.computershik.venetium_150.7871.222.1+chougmium5_iphoneos-arm.deb
+Size: 53875406
+MD5sum: ffd92e13c6425e391540f286518f06fc
+SHA1: 62956a828911313ab7e825993d6fdf803a95e728
+SHA256: 54bc56d68c593cc24ded3a64f9898bb5fdff246fd7be4a5cf9fd3f49bb0b8ef3
 Icon: icons/Chougmium.png
 
