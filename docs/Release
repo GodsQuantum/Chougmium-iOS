@@ -1,0 +1,16 @@
+Origin: Chougmium
+Label: Chougmium
+Suite: stable
+Codename: stable
+Architectures: iphoneos-arm
+Components: main
+Description: Local Chromium for jailbroken iOS 9
+Date: Thu, 26 Nov 2026 10:22:02 GMT
+MD5Sum:
+ 6885d75c4d1ef873d9589abf6ee7d1ae 1563 Packages
+ 98a0170b3226bc3fe5f708f849bf8990 811 Packages.gz
+ 22d2d2e1e642c72e93964634ccda6f8d 918 Packages.bz2
+SHA256:
+ 6edb5ed2f4c46bce9af717a347ffab115976e279ed4be60ccd669e3c509a92cc 1563 Packages
+ 58735ec27b086d3f91e33b226beba5284b465d1f7d08f91945bdead53e9dea06 811 Packages.gz
+ 1e65aa5a205d9f22312df845ac4ce8347bfa7cca6b2abedfb393733861d73ef3 918 Packages.bz2

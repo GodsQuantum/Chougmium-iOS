@@ -1,0 +1,36 @@
+Package: com.local.chougmium-tabsfix
+Name: Chougmium Tab Controls Repair
+Version: 0.1.0
+Architecture: iphoneos-arm
+Depends: firmware (>= 9.0), firmware (<< 10.0), mobilesubstrate, ru.computershik.venetium (>= 150.7871.222.1)
+Maintainer: GodsQuantum (private iPad 2 fork)
+Section: Tweaks
+Priority: optional
+Description: Fix close-tab touches and add native Close tab menu action, without touching web engine.
+Filename: debs/com.local.chougmium-tabsfix_0.1.0_iphoneos-arm.deb
+Size: 7484
+MD5sum: b5ead172370d7cb83d053d27a3f5eb39
+SHA1: fcf24ba5631a0873d95dc8f16590f2eb24c413ea
+SHA256: e1c67678b973237859209ac0fa31a560d6378cd737330bb2a90070d5a8e1517c
+Icon: icons/Chougmium.png
+
+Package: ru.computershik.venetium
+Name: Chougmium
+Description: Standalone Chromium 150 for older jailbroken iPads, with Chougmium icon and iOS 9 keyboard compatibility.
+Maintainer: GodsQuantum (private custom packaging)
+Author: Computershik73 (Venetium upstream); GodsQuantum (custom edition)
+Homepage: https://github.com/Computershik73/Venetium-iOS
+Section: Networking
+Depends: firmware (>= 9.0), firmware (<< 10.0), mobilesubstrate
+Architecture: iphoneos-arm
+Version: 150.7871.222.1+chougmium3
+Installed-Size: 144080
+Conflicts: com.local.venetium-uikit-compat
+Replaces: com.local.venetium-uikit-compat
+Filename: debs/ru.computershik.venetium_150.7871.222.1+chougmium3_iphoneos-arm.deb
+Size: 53875412
+MD5sum: c4243d497f5f6e0245c20770512feeb0
+SHA1: 2d784288e781e087816e07ff1e2552ac64e2e92b
+SHA256: 2f04cb7327ba3294d471ced3476b8c45cd99069923d799e65e379d6a79036036
+Icon: icons/Chougmium.png
+

@@ -1,0 +1,10 @@
+Package: com.local.venetium-uikit-compat
+Name: Venetium UIKit Compatibility (iOS 9)
+Version: 0.1.1
+Architecture: iphoneos-arm
+Depends: firmware (>= 9.0), firmware (<< 10.0), mobilesubstrate, ru.computershik.venetium (>= 150.7871.222.1)
+Description: iOS 9 keyboard compatibility and scoped Chougmium new-tab and About branding. Loaded only in the upstream browser bundle.
+Maintainer: local
+Author: local
+Section: Tweaks
+
