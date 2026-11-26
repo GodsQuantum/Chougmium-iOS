@@ -25,7 +25,9 @@ Requires a jailbroken iOS 9 device with Cydia and MobileSubstrate. Tested instal
 3. Install **Chougmium**. Optionally install **Chougmium Tab Controls Repair** from the same source.
 4. Open Chougmium from the Home screen.
 
-If a package-manager link does not work, use Cydia's Sources > Edit > Add, then search for Chougmium. No computer or remote browser service is required once Cydia and its dependencies are installed.
+If a package-manager link does not work, use Cydia's Sources > Edit > Add, then search for Chougmium. No remote browser service is required. Direct Cydia installation also needs a compatible HTTPS trust store.
+
+**iOS 9 HTTPS caveat:** a native HTTPS request on iPad 2 returned NSURLErrorDomain -1202 against GitHub Pages. iOS 9 predates built-in ISRG Root X1 trust. See [official certificate compatibility](https://letsencrypt.org/docs/certificate-compatibility/) and [official CA certificates](https://letsencrypt.org/certificates/). If the device lacks compatible trusted roots, use the release downloads on a modern computer and transfer the packages via your existing trusted installer. Native Cydia installation from the public URL is not yet verified. Do not ignore certificate errors.
 
 ### Direct downloads
 
