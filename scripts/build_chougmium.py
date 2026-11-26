@@ -24,7 +24,7 @@ UPSTREAM_SHA256 = "7b7881b5b7f1ad1c8cab77af27fe90e79a7f764b260a1848fa45f89dadc7b
 UPSTREAM_EXE_SHA256 = "2dacf0c78e0313a098b9f5c8f6a85a9a19f92df23530543599a3d0dc2ff7bca2"
 SHIM = ROOT / "releases/com.local.venetium-uikit-compat_0.1.1_iphoneos-arm.deb"
 ICON = ROOT / "assets/chougmium-icon.png"
-NEW_VERSION = "150.7871.222.1+chougmium3"
+NEW_VERSION = "150.7871.222.1+chougmium4"
 RELEASE = ROOT / "docs/debs" / f"ru.computershik.venetium_{NEW_VERSION}_iphoneos-arm.deb"
 
 
@@ -58,7 +58,7 @@ def update_control(filename: Path) -> None:
         "Name": "Chougmium",
         "Version": NEW_VERSION,
         "Description": "Standalone Chromium 150 for older jailbroken iPads, with Chougmium icon and iOS 9 keyboard compatibility.",
-        "Maintainer": "GodsQuantum (private custom packaging)",
+        "Maintainer": "GodsQuantum (custom packaging)",
         "Author": "Computershik73 (Venetium upstream); GodsQuantum (custom edition)",
         "Depends": "firmware (>= 9.0), firmware (<< 10.0), mobilesubstrate",
     }.items():

@@ -7,6 +7,10 @@ An independent packaging and compatibility edition of [Venetium for iOS](https:/
 
 [Install from your iPad](https://godsquantum.github.io/Chougmium-iOS/) · [Releases](https://github.com/GodsQuantum/Chougmium-iOS/releases) · [Source and credits](#source-and-license)
 
+## Current release
+
+Version 150.7871.222.1+chougmium4 refreshes the app and repository artwork with a 1024 px RGB master and Lanczos-scaled native icons. The original Chromium binary and existing profile are preserved.
+
 ## Features
 
 - Chromium/Blink and V8 run on the device, not on a remote browser server.
@@ -31,8 +35,8 @@ If a package-manager link does not work, use Cydia's Sources > Edit > Add, then 
 
 ### Direct downloads
 
-- [Chougmium 150.7871.222.1+chougmium3 (.deb)](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium3/ru.computershik.venetium_150.7871.222.1%2Bchougmium3_iphoneos-arm.deb)
-- [Optional tab-controls repair (.deb)](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium3/com.local.chougmium-tabsfix_0.1.0_iphoneos-arm.deb)
+- [Chougmium 150.7871.222.1+chougmium4 (.deb)](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium4/ru.computershik.venetium_150.7871.222.1%2Bchougmium4_iphoneos-arm.deb)
+- [Optional tab-controls repair (.deb)](https://github.com/GodsQuantum/Chougmium-iOS/releases/download/v150.7871.222.1-chougmium4/com.local.chougmium-tabsfix_0.1.0_iphoneos-arm.deb)
 
 A downloaded .deb requires a compatible package installer; stock iOS cannot install it directly. Do not install over an unrelated browser or force package dependencies. This package intentionally shares Venetium's bundle/package identity and replaces that edition, rather than creating a second profile.
 

@@ -5,7 +5,7 @@ import bz2,gzip,hashlib,io,subprocess,tarfile
 from email.utils import formatdate
 ROOT=Path(__file__).resolve().parents[1]
 D=ROOT/"docs"
-expected={"ru.computershik.venetium":"150.7871.222.1+chougmium3","com.local.chougmium-tabsfix":"0.1.0"}
+expected={"ru.computershik.venetium":"150.7871.222.1+chougmium4","com.local.chougmium-tabsfix":"0.1.0"}
 def digest(data,alg):return hashlib.new(alg,data).hexdigest()
 entries=[];seen=set()
 for p in sorted((D/"debs").glob("*.deb")):

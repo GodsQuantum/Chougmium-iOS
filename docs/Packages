@@ -17,20 +17,20 @@ Icon: icons/Chougmium.png
 Package: ru.computershik.venetium
 Name: Chougmium
 Description: Standalone Chromium 150 for older jailbroken iPads, with Chougmium icon and iOS 9 keyboard compatibility.
-Maintainer: GodsQuantum (private custom packaging)
+Maintainer: GodsQuantum (custom packaging)
 Author: Computershik73 (Venetium upstream); GodsQuantum (custom edition)
 Homepage: https://github.com/Computershik73/Venetium-iOS
 Section: Networking
 Depends: firmware (>= 9.0), firmware (<< 10.0), mobilesubstrate
 Architecture: iphoneos-arm
-Version: 150.7871.222.1+chougmium3
+Version: 150.7871.222.1+chougmium4
 Installed-Size: 144080
 Conflicts: com.local.venetium-uikit-compat
 Replaces: com.local.venetium-uikit-compat
-Filename: debs/ru.computershik.venetium_150.7871.222.1+chougmium3_iphoneos-arm.deb
-Size: 53875412
-MD5sum: c4243d497f5f6e0245c20770512feeb0
-SHA1: 2d784288e781e087816e07ff1e2552ac64e2e92b
-SHA256: 2f04cb7327ba3294d471ced3476b8c45cd99069923d799e65e379d6a79036036
+Filename: debs/ru.computershik.venetium_150.7871.222.1+chougmium4_iphoneos-arm.deb
+Size: 53764150
+MD5sum: df2bf24641cc05305fbdbd048f6e7457
+SHA1: e7bc60d3fc61c24f361b9c1673f4f0e7b1f37409
+SHA256: 429c5a6db87f533b767cd896cab8d01f19b6114e889f4eb83844d01cdc30f0ac
 Icon: icons/Chougmium.png
 
